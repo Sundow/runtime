@@ -292,8 +292,6 @@ FCFuncStart(gAssemblyLoadContextFuncs)
 FCFuncEnd()
 
 FCFuncStart(gAssemblyNameFuncs)
-    FCFuncElement("nInit", AssemblyNameNative::Init)
-    FCFuncElement("ComputePublicKeyToken", AssemblyNameNative::GetPublicKeyToken)
     FCFuncElement("nGetFileInformation", AssemblyNameNative::GetFileInformation)
 FCFuncEnd()
 
@@ -322,8 +320,6 @@ FCFuncStart(gDelegateFuncs)
 FCFuncEnd()
 
 FCFuncStart(gMathFuncs)
-    FCFuncElementSig("Abs", &gsig_SM_Dbl_RetDbl, COMDouble::Abs)
-    FCFuncElementSig("Abs", &gsig_SM_Flt_RetFlt, COMSingle::Abs)
     FCFuncElement("Acos", COMDouble::Acos)
     FCFuncElement("Acosh", COMDouble::Acosh)
     FCFuncElement("Asin", COMDouble::Asin)
